@@ -1,0 +1,26 @@
+{
+  "name": "nodeexpress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sinhphan/f8NodejsExpress.git"
+  },
+  "keywords": [
+    "f8",
+    "blog",
+    "f8",
+    "nodejs",
+    "nodejs"
+  ],
+  "author": "SinhPhan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sinhphan/f8NodejsExpress/issues"
+  },
+  "homepage": "https://github.com/sinhphan/f8NodejsExpress#readme"
+}
