@@ -6,9 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+<<<<<<< HEAD
   "author": "sinhphan",
   "license": "ISC",
   "dependencies": {
     "mysql": "^2.18.1"
+=======
+  "author": "sinh phan",
+  "license": "ISC",
+  "dependencies": {
+    "mysql": "^2.18.1",
+    "nodemailer": "^6.9.1"
+>>>>>>> e04673eab08185ac4efbda2f8ed3727c4c41fa95
   }
 }
