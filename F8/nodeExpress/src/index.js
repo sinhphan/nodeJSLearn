@@ -1,9 +1,13 @@
 const express = require('express');
 const morgan = require('morgan');
 const { engine } = require('express-handlebars');
+const db = require('./config/db');
 
 const app = express();
 const port = 3000;
+
+//connect to database
+db.connect();
 
 // static folder
 app.use(express.static('./src/public'));

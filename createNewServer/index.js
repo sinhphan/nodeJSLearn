@@ -1,5 +1,5 @@
-var http = require('http')
-var fs = require('fs')
+var http = require('http');
+var fs = require('fs');
 
 // http.createServer((request, response) => {
 //   var param = request.url.substring(1).split('&')
@@ -11,23 +11,24 @@ var fs = require('fs')
 // var fs = require('fs');
 // console.log(fs);
 
-var content = "phan COng SInh"
+var content = 'phan COng SInh';
 
 fs.writeFile('sinh.html', content, (err) => {
-  if (err) throw err
+  if (err) throw err;
 
-  console.log('Write success')
-})
+  console.log('Write success');
+});
 
-http.createServer((request, response) => {
-  response.writeHead(200, { 'content-Type': 'text/html' })
+http
+  .createServer((request, response) => {
+    response.writeHead(200, { 'content-Type': 'text/html' });
 
-  fs.readFile('./code.html', 'utf-8', (err, data) => {
-    if (err) throw err
+    fs.readFile('./code.html', 'utf-8', (err, data) => {
+      if (err) throw err;
 
-    response.write(data)
+      response.write(data);
 
-    response.end()
+      response.end();
+    });
   })
-
-}).listen(8080)
+  .listen(8080);

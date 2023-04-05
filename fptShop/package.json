@@ -1,0 +1,16 @@
+{
+  "name": "fptshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "nodemon --inspect src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sinh phan",
+  "license": "ISC",
+  "devDependencies": {
+    "find-my-way": "^7.6.0",
+    "nodemon": "^2.0.22"
+  }
+}
