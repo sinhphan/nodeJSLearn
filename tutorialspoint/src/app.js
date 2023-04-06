@@ -5,7 +5,7 @@ const multer = require('multer');
 const mongoose = require('mongoose');
 mongoose
   .connect(
-    'mongodb+srv://Cluster77742:SVxTVnlRV0pj@cluster77742.1n42d0c.mongodb.net/my_db'
+    'mongodb+srv://Cluster77742:@cluster77742.1n42d0c.mongodb.net/my_db'
   )
   .then(() => {
     console.log('Database is connecting');
