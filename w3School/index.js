@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-var mysql = require('mysql')
-
-const database = mysql.createConnection({
-  host: 'localhost',
-  user: 'sinh',
-  password: 'SinhLAa3@'
-})
-
-database.connect((err) => {
-  if (err) throw err
-
-  console.log('connected');
-})
-=======
 const http = require('http');
 const url = require('url');
 const fs = require('fs');
@@ -51,5 +36,3 @@ http.createServer((request, response) => {
 }).listen(5555)
 
 //create a server listen in port 5555
-
->>>>>>> e04673eab08185ac4efbda2f8ed3727c4c41fa95
