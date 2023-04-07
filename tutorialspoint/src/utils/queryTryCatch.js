@@ -1,9 +1,5 @@
-const queryTryCatch =
-  (fn) =>
-  (...param) => {
-    Promise.resolve(fn(...param)).catch((err) => {
-      throw err;
-    });
-  };
+const queryTryCatch = (fn) => (param, next) => {
+  Promise.resolve(fn(param, next)).catch((err) => next(err));
+};
 
 module.exports = { queryTryCatch };
